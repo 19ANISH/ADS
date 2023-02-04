@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Semi Home</title>
+</head>
+<body>
+<div class="col-md-2"></div>
+<div class="col-md-8">
+
+
+
+<div class="container mt-2">
+
+  <table class="table table-dark">
+  <thead>
+  <h3 class="text-center text-dark bg-light">Employee Data</h3>
+    <tr>
+      <th scope="col">emp_id</th>
+      <th scope="col">first_name</th>
+      <th scope="col">last_name</th>
+      <th scope="col">birth_date</th>
+      <th scope="col">sex</th>
+      <th scope="col">salary</th>
+      <th scope="col">super_id</th>
+      <th scope="col">branch_id</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for post in query2 %}
+   <tr>
+      <td>{{post.emp_id}}</td>
+      <td>{{post.first_name}}</td>
+      <td>{{post.last_name}}</td>
+      <td>{{post.birth_date}}</td>
+      <td>{{post.sex}}</td>
+      <td>{{post.salary}}</td>
+      <td>{{post.super_id}}</td>
+      <td>{{post.branch_id}}</td>
+    </tr>
+   
+  {% endfor %}
+   
+  </tbody>
+</table>
+
+
+</div>
+<div class="container mt-2">
+
+  <table class="table table-dark">
+  <thead>
+  <h3 class="text-center text-dark bg-light">Branch Table</h3>
+    <tr>
+      <th scope="col">branch_id</th>
+      <th scope="col">branch_name</th>
+      <th scope="col">mgr_id</th>
+      <th scope="col">mgr_start_date</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for post in query %}
+   <tr>
+      <td>{{post.branch_id}}</td>
+      <td>{{post.branch_name}}</td>
+      <td>{{post.mgr_id}}</td>
+      <td>{{post.mgr_start_date}}</td>
+    </tr>
+   
+  {% endfor %}
+   
+  </tbody>
+</table>
+
+
+</div>
+
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<button><a href="/semi" style="text-decoration: none; text-decoration-color: black;">Semi Join</a></button>
+</body>
+</html>

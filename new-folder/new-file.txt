@@ -1,1 +1,1 @@
-file_content=new+file+content
+file_content=updated

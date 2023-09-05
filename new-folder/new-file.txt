@@ -1,1 +1,1 @@
-new
+file_content=new+file+content

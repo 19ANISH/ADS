@@ -1,2 +1,1 @@
-New file content
-Used rest api of github to and made fast api
+testing end points of fast api github

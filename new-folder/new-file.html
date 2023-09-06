@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File and Folder Viewer</title>
+</head>
+<body>
+    <h1>File and Folder Viewer</h1>
+    <h2>Folders:</h2>
+    <ul>
+        {% for folder in folders %}
+        <li><a href="{{ folder.url }}">{{ folder.name }}</a></li>
+        {% endfor %}
+    </ul>
+    <h2>Files:</h2>
+    <ul>
+        {% for file in files %}
+        <li>
+            <a href="/view_file.html/{{ user }}/{{ repo }}/{{ folder_path }}/{{ file.name }}">{{ file.name }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+

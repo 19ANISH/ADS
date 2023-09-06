@@ -1,1 +1,1 @@
-testing end points of fast api github
+testing end points
